@@ -20,31 +20,39 @@ from time import sleep
 
 def forward(seconds):
     
-    pibrella.output.E.on()
-    pibrella.output.F.on()
+    pibrella.output.e.on()
+    pibrella.output.f.on()
     sleep(seconds)
-    pibrella.output.E.off()
-    pibrella.output.F.off()
+    pibrella.output.e.off()
+    pibrella.output.f.off()
             
 def left(seconds):
     
-    pibrella.output.E.on()
+    pibrella.output.e.on()
     sleep(seconds)
-    pibrella.output.E.off()
+    pibrella.output.e.off()
     
 def right(seconds):
     
-    pibrella.output.F.on()
+    pibrella.output.f.on()
     sleep(seconds)
-    pibrella.output.F.off()
+    pibrella.output.f.off()
+	
+def button_pressed():
+
+	for i in range(0,4):
+		forward(0.5)
+		left(0.9)
+	
+	
+	
     
 # main program
 
-# move in a square.
+while True:
+	if pibrella.button.read():
+		button_pressed()
 
-for counter in range(1,4):
-    forward(2)
-    left(1)
     
 
 
