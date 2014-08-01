@@ -1,6 +1,11 @@
 RaspberryPiBot
 ==============
 
-Software for the Raspberry Pi robot
+Software for the Raspberry Pi robot.
 
-RasPiBot_1  simple program bot is programmed to drive round a squire.
+files
+
+RasPiBot_1.py           bot is programmed to drive round a squire.
+RaspberryPiBot_mk2.pdf  PDF of the chassis design.
+RaspberryPiBot_mk2.svg  Inkscape file of the chassis design.
+RaspberryPiBot_mk2.dxf  AutoCad fiie of the chassis design.
